@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracking</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <p id="bar">=</p>
+            </label>
+            <img src="assets/logoo.png" class="logo" id="logo" alt="logo covid tracker">
+            <ul>
+                <li><a href="#">LINK 1</a></li>
+                <li><a href="#">LINK 2</a></li>
+                <li><a href="#">LINK 3</a></li>
+                <li><a href="#">LINK 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top-content">
+            <h1>GLOBAL COVID-19 TRACKING</h1>
+            <div class="box-case-cont">
+                <div class="box-case" id="box-positif">
+                    <h4>CONFIRMED</h4>
+                    <h2 id="positiv-data"></h2>
+                    <img src="assets/sad.png">
+                </div>
+                <div class="box-case" id="box-recovered">
+                    <h4>RECOVERED</h4>
+                    <h2 id="recovered-data"></h2>
+                    <img src="assets/happy.png">
+                </div>
+                <div class="box-case" id="box-dead">
+                    <h4>DEATHS</h4>
+                    <h2 id="death-data"></h2>
+                    <img src="assets/verysad.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-content">
+            <h2>Covid-19 Cases in Each Country</h2>
+            <hr color="#ebebe0">
+            <div class="table-cont">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Cases</th>
+                            <th>Active Cases</th>
+                            <th>Recovered</th>
+                            <th>Deaths</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-country"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <my-footer></my-footer>
+</body>
+</html>
